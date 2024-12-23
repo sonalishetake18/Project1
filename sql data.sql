@@ -1,0 +1,14 @@
+create database girkar;
+show databases;
+use girkar;
+create table emp(ID int, Name varchar(20), City varchar(20));
+desc emp;
+insert into emp values(1,"Shubham","Mumbai"),(2,"Babita","Thane"),(3,"Yash","Ratnagiri"),(4,"Rahul","Pune");
+select * from emp;
+insert into emp (ID,Name) values(5,"Bhavesh");
+rename table emp To employe;
+select * from employe;
+truncate table employe;
+desc employe;
+drop table employe;
+create table employee(E_ID int, E_Name varchar(20), DOB date, De varchar(20));
